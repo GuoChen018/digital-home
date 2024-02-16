@@ -1,0 +1,23 @@
+---
+import MainHead from './MainHead.astro';
+
+
+interface Props {
+    title: string; 
+    description: string;
+}
+
+const {
+    title = "Guo's Portfolio",
+    description = "The digital home I always wanted",
+} = Astro.props as Props;
+---
+
+<html lang="en">
+	<MainHead {title} {description}/>
+	<body>
+		<slot>
+
+        </slot>
+	</body>
+</html>
