@@ -1,5 +1,7 @@
 ---
 import MainHead from './MainHead.astro';
+import MainFooter from './MainFooter.astro';
+import MainHeader from './MainHeader.astro';
 
 
 interface Props {
@@ -15,9 +17,11 @@ const {
 
 <html lang="en">
 	<MainHead {title} {description}/>
+    <MainHeader/>
 	<body>
 		<slot>
 
         </slot>
 	</body>
+    <MainFooter></MainFooter>
 </html>

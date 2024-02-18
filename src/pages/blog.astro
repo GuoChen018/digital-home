@@ -1,0 +1,17 @@
+---
+//component imports
+import MainLayout from '../layouts/MainLayout.astro'
+const {frontmatter} = Astro.props; 
+const allPosts = await Astro.glob('../pages/blog/*.md');
+
+---
+
+<MainLayout title="Blog" description='My Blog'>
+  <h1>Blog</h1>
+    
+  {allPosts.map((post) => 
+    <li>
+        <a href={post.url}>{post.frontmatter.title}</a>
+    </li>)}
+</MainLayout>
+
