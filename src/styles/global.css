@@ -1,0 +1,53 @@
+:root {
+
+    /* Font */
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem; 
+    --font-size-large: 1.25rem; 
+    --font-size-xlarge: 1.75rem; 
+    --font-size-xxlarge: 2rem;
+
+    --font-weight-reg: 400; 
+    --font-weight-medium: 500; 
+    --font-weight-semibold: 600; 
+
+    --lh-small: 140%;
+    --lh-medium: 150%;
+    --lh-large: 160%;
+
+    /* Color Tokens */
+    --color-gray-1: #fff; 
+    --color-gray-2: #fbfbfb; 
+    --color-gray-3: #e7e7e7;
+    --color-gray-4: #b5b5b5; 
+    --color-gray-5: #646464; 
+    --color-gray-6: #121212;
+
+    --color-background-primary: var(--color-gray-1);
+    --color-background-secondary: var(--color-gray-2); 
+    --color-border-light: var(--color-gray-3);
+    --color-border-dark: var(--color-gray-4);
+    --color-text-primary: var(--color-gray-6);
+    --color-text-secondary: var(--color-gray-5);
+
+    --border-radius-small: 0.5rem;
+    --border-radius-medium: 0.75rem;
+    --border-radius-large: 1rem;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xxlarge);
+    line-height: var(--lh-large);
+}
+
+
