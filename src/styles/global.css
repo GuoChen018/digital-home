@@ -43,9 +43,32 @@
     font-display: swap;
 }
 
-nav, footer {
+nav, footer{
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+#hero-illustration svg {
+    width: 100%;
+}
+
+
+@keyframes block {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#block {
+    animation-name: block;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 header, #project-list {
