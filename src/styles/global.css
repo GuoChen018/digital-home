@@ -110,8 +110,70 @@ h1 {
     font-family: 'PlusJakartaSans', sans-serif;
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xxlarge);
-    line-height: var(--lh-large);
+    line-height: var(--lh-small);
+    color: var(--color-text-primary);
 }
+
+h2 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xlarge);
+    line-height: var(--lh-medium);
+    color: var(--color-text-primary);
+}
+
+h3 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-large);
+    line-height: var(--lh-large);
+    color: var(--color-text-primary);
+}
+
+h4 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-medium);
+    line-height: var(--lh-large);
+    color: var(--color-text-primary);
+}
+
+h5 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-medium);
+    line-height: var(--lh-large);
+    color: var(--color-text-secondary);
+}
+
+h6 {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-small);
+    line-height: var(--lh-large);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    line-height: var(--lh-large);
+    color: var(--color-text-secondary);
+}
+
+a {
+    font-family: 'PlusJakartaSans', sans-serif;
+    color: var(--color-text-secondary);
+    text-decoration-thickness: .9px; 
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--color-text-primary);
+}
+
 
 ul {
     list-style-type: none; /* Remove default list bullets */
