@@ -1,8 +1,7 @@
 ---
 import MainHead from './MainHead.astro';
 import MainFooter from './MainFooter.astro';
-import MainHeader from './MainHeader.astro';
-
+import Nav from './Nav.astro';
 
 interface Props {
     title: string; 
@@ -20,11 +19,13 @@ import '../styles/global.css';
 
 <html lang="en">
 	<MainHead {title} {description}/>
-    <MainHeader/>
+    
 	<body>
-		<slot>
+        <a href="#main" class="skip">Skip to main content</a>
+        <Nav/>
+        <slot>
 
         </slot>
+        <MainFooter/>
 	</body>
-    <MainFooter></MainFooter>
 </html>

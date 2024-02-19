@@ -43,11 +43,85 @@
     font-display: swap;
 }
 
+nav, footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+header, #project-list {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 1.25rem;
+}
+
+
+
+.grid figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
+    overflow: hidden;
+}
+
+.column-4 {grid-column-start: span 4;}
+.column-6 {grid-column-start: span 6;}
+.column-8 {grid-column-start: span 8;}
+.column-12 {grid-column-start: span 12;}
+
+
 h1 {
     font-family: 'PlusJakartaSans', sans-serif;
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xxlarge);
     line-height: var(--lh-large);
+}
+
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+@media (max-width: 1000px) {
+    .grid figure {
+        grid-column-start: span 12;
+    }
 }
 
 
