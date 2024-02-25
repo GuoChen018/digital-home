@@ -10,6 +10,7 @@
     --font-weight-reg: 400; 
     --font-weight-medium: 500; 
     --font-weight-semibold: 600; 
+    --font-weight-bold: 700;
 
     --lh-small: 140%;
     --lh-medium: 150%;
@@ -40,7 +41,31 @@
 @font-face {
     font-family: 'PlusJakartaSans';
     src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('/fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('/fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('/fonts/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -48,6 +73,21 @@
 nav, footer{
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+#project-list, header, .inko-cat {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+header h3 {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+body {
+    margin: 0 auto;
 }
 
 #hero-illustration svg {
@@ -71,11 +111,6 @@ nav, footer{
     animation-name: block;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-
-header, #project-list, .hero {
-    padding-left: 10rem;
-    padding-right: 10rem;
 }
 
 .skip {
@@ -122,14 +157,14 @@ header, #project-list, .hero {
     margin-right: 0.25rem;
 }
 
-.grid figure {
+figure {
     margin: 0;
     padding: 0;
 }
 
 figure img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     border-radius: var(--border-radius-medium);
     border: 1px solid var(--color-border-light);
@@ -182,18 +217,27 @@ h5 {
     color: var(--color-text-secondary);
 }
 
-h6 {
+h6, figcaption {
     font-family: 'PlusJakartaSans', sans-serif;
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-medium);
     font-size: var(--font-size-small);
     line-height: var(--lh-large);
     color: var(--color-text-secondary);
     text-transform: uppercase;
 }
 
+
 p {
     font-family: 'PlusJakartaSans', sans-serif;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-reg);
+    font-size: var(--font-size-medium);
+    line-height: var(--lh-large);
+    color: var(--color-text-secondary);
+}
+
+strong {
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
     line-height: var(--lh-large);
     color: var(--color-text-secondary);
@@ -214,6 +258,18 @@ a:hover {
 ul {
     list-style-type: none; /* Remove default list bullets */
     padding-left: 0; /* Remove default padding */
+}
+
+/* @media (min-width: 1400px) {
+    body {
+        max-width: 1100px;
+    }
+} */
+
+@media (min-width: 1600px) {
+    body {
+        max-width: 1100px;
+    }
 }
 
 @media (max-width: 1000px) {
