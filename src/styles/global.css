@@ -14,7 +14,7 @@
 
     --lh-small: 140%;
     --lh-medium: 150%;
-    --lh-large: 160%;
+    --lh-large: 175%;
 
     /* Color Tokens */
     --color-gray-1: #fff; 
@@ -75,9 +75,44 @@ nav, footer{
     padding-right: 3rem;
 }
 
+nav {
+    margin: 2rem 0 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    color: var(--color-text-secondary);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    border-radius: var(--border-radius-small);
+    padding: 0.5rem 0.75rem; 
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: var(--color-background-secondary);
+}
+
 #project-list, header, .inko-cat {
     padding-left: 10rem;
     padding-right: 10rem;
+}
+
+#project-list li {
+    margin: 0 0 8rem;
+}
+
+.project_description {
+    margin: 0 0 1.25rem;
 }
 
 header h3 {
@@ -120,10 +155,13 @@ body {
     width: 1px;
     height: 1px;
     overflow: hidden;
+    background-color: var(--color-background-tertiary);
+    padding: 0.25rem 0.75rem;
 }
 
 .skip:focus {
-    position: static;
+    position: absolute;
+    left: 40px;
     width: auto;
     height: auto;
 }
@@ -131,6 +169,8 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem;
 }
 
 .logo p {
@@ -155,6 +195,10 @@ body {
     border-radius: var(--border-radius-small);
     display: inline-block;
     margin-right: 0.25rem;
+}
+
+.project_description {
+    width: 50%;
 }
 
 figure {
@@ -199,6 +243,7 @@ h3 {
     font-size: var(--font-size-large);
     line-height: var(--lh-large);
     color: var(--color-text-primary);
+    margin: 0 0 0.25rem;
 }
 
 h4 {
@@ -233,6 +278,7 @@ p {
     font-size: var(--font-size-medium);
     line-height: var(--lh-large);
     color: var(--color-text-secondary);
+    margin: 0 0 0.5rem;
 }
 
 strong {
@@ -248,6 +294,7 @@ a {
     color: var(--color-text-secondary);
     text-decoration-thickness: .9px; 
     text-underline-offset: 3px;
+    margin: 0 0 0.5rem;
 }
 
 a:hover {
