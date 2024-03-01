@@ -8,49 +8,60 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <!-- Title + hero + description -->
         <section class="hero">
             <h1>Building an all-in-one productivity tool from scratch</h1>
-            <ul>
+            <ul class="tag-list">
                 <li class="tag">Productivity</li>
                 <li class="tag">0 to 1</li>
                 <li class="tag">Personal Project</li>
                 <li class="tag">Shipped</li>
             </ul>
-            <article class="grid">
+            <article class="project-grid">
                 <figure class="column-12">
-                    <div class="image-link img-mid img-border">
-                        <img src="/images/inko-cat/hero-1.png" alt="test">;
+                    <div class="img-mid img-border">
+                        <img src="/images/inko-cat/hero-1.png" alt="test">
                     </div>
                 </figure>
                 <p class="column-8">Inko Cat is a productivity tool that provides you the building blocks to create your own spaces. As the founding designer, I owned all the visuals and product. It’s one of the coolest feelings to use something you designed every day.</p>
+                <ul class="project-grid quick-overview column-12">   
+                    <li class="column-3">
+                        <h6>Role</h6>
+                        <p>Product Designer</p>
+                    </li>
+                    <li class="column-3">
+                        <h6>Team</h6>
+                        <p>Ian Huang (Engineer)</p>
+                    </li>
+                    <li class="column-3">
+                        <h6>Duration</h6>
+                        <p>2023 - Present</p>
+                    </li>
+                    <li class="column-3">
+                        <h6>Link</h6>
+                        <a href="https://inko.cat/" target="_blank">inko.cat</a>
+                        <i class="ph ph-arrow-up-right"></i>
+                    </li>
+                </ul>
             </article>
-            <ul>
-                <li>
-                    <h6>Role</h6>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <h6>Team</h6>
-                    <p>Ian Huang (Engineer)</p>
-                </li>
-                <li>
-                    <h6>Duration</h6>
-                    <p>2023 - Present</p>
-                </li>
-            </ul>
         </section>
 
         <!-- Why -->
         <section class="i-why">
-            <h5>Why this project?</h5>
-            <h2>None of the current tools help us manage tasks well and actually get stuff done</h2>
+            <article class="text-banner">
+                <h5>Why this project?</h5>
+                <h2>None of the current tools help us manage tasks well and actually get stuff done</h2>
+            </article>
             <figure>
-                <img src="../../images/testing.png" alt="inko cat">
+                <div class="img-all">
+                    <img src="/images/inko-cat/lack-tools.png" alt="test">
+                </div>
             </figure>
         </section>
 
         <!-- What is Inko Cat -->
         <section class="i-what-is-inko-cat">
-            <h5>What is Inko Cat?</h5>
-            <h2>So, we built Inko Cat, a tool that gives you the building blocks to create your own productivity spaces</h2>
+            <article class="text-banner">
+                <h5>What is Inko Cat?</h5>
+                <h2>So, we built Inko Cat, a tool that gives you the building blocks to create your own productivity spaces</h2>
+            </article>
             <article class="grid">
                 <h3 class="column-6">At its core, Inko Cat is flexible and interconnected.</h3>
                 <ul class="column-6">
