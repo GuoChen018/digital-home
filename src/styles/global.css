@@ -272,6 +272,10 @@ body {
     gap: 0 1.25rem;
 }
 
+.sub-header {
+    margin-block-start: 3rem;
+}
+
 .tag {
     font-family: 'PlusJakartaSans', sans-serif;
     font-weight: var(--font-weight-reg);
@@ -355,7 +359,7 @@ h6, figcaption {
     line-height: var(--lh-xlarge);
     color: var(--color-text-secondary);
     text-transform: uppercase;
-    margin: 0 0 0.25rem;
+    margin: 0.5rem 0 0.25rem;
 }
 
 
@@ -373,7 +377,7 @@ strong {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
 }
 
 a {
@@ -406,13 +410,38 @@ ul {
 .inko-cat section {
     margin-block-end: 5rem;
 }
+.project-grid .column-8{
+    margin-block-start: 2rem;
+}
 
 .inko-cat figure {
-    margin-block-end: 2rem;
+    /* margin-block-end: 2rem; */
 }
 
 .text-banner {
+    margin-block-end: 3rem;
+}
+
+.text-d-banner {
     margin-block-end: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem; 
+    background-color: var(--color-background-secondary);
+    margin-block-end: 1rem;
+    border-radius: var(--border-radius-medium);
+    gap: 0.5rem;
+}
+
+.icon-large {
+    font-size: 1.5rem;
+}
+
+.sub-section {
+    margin-block-end: 4rem;
 }
 
 .inko-cat p {
