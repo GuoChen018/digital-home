@@ -114,10 +114,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
 
         <!-- Blocks -->
         <section class="i-blocks">
-            <h5>Blocks</h5>
-            <ul class="grid">
+            <h5>Key concept / Block</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
-                    <h2>We provide different types of blocks.</h2>
+                    <h2>Blocks are the building blocks (oops)</h2>
                 </li>
                 <li class="column-6">
                     <p>You can add as many blocks into a space. We provide different blocks, and we plan to add more in the future.</p>
@@ -189,11 +189,13 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     <div class="img-all">
                         <img src="../../images/i-c/inko-list-drag.png" alt="test">
                     </div>
+                    <figcaption>Dragging task in a un-sorted list</figcaption>
                 </figure>
                 <figure class="column-6">
                     <div class="img-all">
                         <img src="../../images/i-c/inko-list-hover.png" alt="test">
                     </div>
+                    <figcaption>Hover to delete</figcaption>
                 </figure>
             </article>
         </section>
@@ -206,7 +208,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
                 <h3 class="column-6">Board</h3>
                 <p class="column-6">Great for tracking projects.</p>
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-board-hero.png" alt="inko cat">
+                    </div>
+                </figure>
             </article>
         </section>
 
@@ -218,15 +223,33 @@ import MainLayout from '../../layouts/MainLayout.astro';
                 <h3 class="column-6">Note</h3>
                 <p class="column-6">Go-to place for brain dump and quick ideas.</p>
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-note-hero.png" alt="inko cat">
+                    </div>
                 </figure>
                 <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Selected note in a list</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-note-tooltip.png" alt="inko cat">
+                    </div>
+                    <figcaption>View all notes tooltip</figcaption>
                 </figure>
                 <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Deleting a note</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-note-all-notes.png" alt="inko cat">
+                    </div>
+                    <figcaption>List of all notes</figcaption>
+                </figure>
+                <figure class="column-6">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-note-delete.png" alt="inko cat">
+                    </div>
+                    <figcaption>Delete a note</figcaption>
+                </figure>
+                <figure class="column-6">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-note-drag.png" alt="inko cat">
+                    </div>
+                    <figcaption>Hover to drag a line of text</figcaption>
                 </figure>
             </article>
         </section>
@@ -238,15 +261,21 @@ import MainLayout from '../../layouts/MainLayout.astro';
                 <h3 class="column-6">Journal</h3>
                 <p class="column-6">Safe space to record your day and thoughts.</p>
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-journal-hero.png" alt="inko cat">
+                    </div>
                 </figure>
                 <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Find journal entry on specific date</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-journal-select-date.png" alt="inko cat">
+                    </div>
+                    <figcaption>Choose date entry</figcaption>
                 </figure>
                 <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Deleting a note</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-journal-tooltip.png" alt="inko cat">
+                    </div>
+                    <figcaption>Go back to today</figcaption>
                 </figure>
             </article>
         </section>
@@ -257,13 +286,34 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <article class="grid">
                 <h3 class="column-6">Timer</h3>
                 <p class="column-6">A nod to the famous pomodoro technique.</p>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Start timer</figcaption>
+                <figure class="column-12">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-timer-hero.png" alt="inko cat">
+                    </div>
                 </figure>
                 <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Timer with task</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-timer-complete-task.png" alt="inko cat">
+                    </div>
+                    <figcaption>Complete a task</figcaption>
+                </figure>
+                <figure class="column-6">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-timer-long-title.png" alt="inko cat">
+                    </div>
+                    <figcaption>Edge case: Long title</figcaption>
+                </figure>
+                <figure class="column-6">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-timer-tooltip.png" alt="inko cat">
+                    </div>
+                    <figcaption>Start a timer</figcaption>
+                </figure>
+                <figure class="column-6">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-timer-edit-name.png" alt="inko cat">
+                    </div>
+                    <figcaption>Edit name cursor hover</figcaption>
                 </figure>
             </article>
         </section>
@@ -276,23 +326,17 @@ import MainLayout from '../../layouts/MainLayout.astro';
                 <h3 class="column-6">Image</h3>
                 <p class="column-6">Add in GIFs / images to decorate your spaces.</p>
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Change image</figcaption>
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Change fit</figcaption>
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-image-hero.png" alt="inko cat">
+                    </div>
                 </figure>
             </article>
         </section>
-
+        
         <!-- Spaces -->
-        <section class="i-spaces">
-            <h5>Spaces</h5>
-            <ul class="grid">
+        <section class="i-blocks">
+            <h5>Key concept / Space</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
                     <h2>Spaces are where blocks live</h2>
                 </li>
@@ -300,48 +344,74 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     <p>You can name these or change the icon to fit your needs - Work, Personal, Life, Classes, etc.</p>
                 </li>
             </ul>
+            <figure class="column-12">
+                <div class="img-all">
+                    <img src="/images/i-c/inko-block-hero-2.png" alt="test">
+                </div>
+            </figure>
+        </section>
+
+        <!-- Spaces -> Create a new space -->
+        <section class="i-space-create-new">
+            <article class="text-banner">
+                <h5>Space</h5>
+                <h3>Create a new space</h3>
+            </article>
             <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-create-space.mp4"></video>
+                    </div>
                 </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Create a new space</figcaption>
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Edit space icon</figcaption>
-                </figure>
+            </article>
+        </section>
+
+        <!-- Spaces -> Edit space icon -->
+        <section class="i-space-edit-icon">
+            <article class="text-banner">
+                <h5>Space</h5>
+                <h3>Edit space icon</h3>
+            </article>
+            <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Customize panel</figcaption>
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-change-space-icon.mp4"></video>
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+         <!-- Spaces -> Add block -->
+         <section class="i-space-edit-icon">
+            <article class="text-banner">
+                <h5>Space</h5>
+                <h3>Add block to a space</h3>
+            </article>
+            <article class="grid">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-add-block.mp4"></video>
+                    </div>
                 </figure>
             </article>
         </section>
 
         <!-- Key feature - customization  -->
         <section class="i-feature-customize">
-            <h5>Key Features</h5>
+            <h5>Key Feature #1</h5>
             <ul class="grid">
                 <li class="column-6">
-                    <h2>Customize your space & blocks</h2>
+                    <h2>Customize your blocks</h2>
                 </li>
                 <li class="column-6">
-                    <p>In terms of blocks themselves, you can change their view, filters, and sorting.</p>
+                    <p>You can change a block's view, filters, and sorting.</p>
                 </li>
             </ul>
             <article class="grid">
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-4">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-8">
-                    <img src="../../images/testing.png" alt="inko cat">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <!-- <video class="img-all" autoplay loop src="../../video/inko-cat/inko-add-block.mp4"></video> -->
+                    </div>
                 </figure>
             </article>
         </section>

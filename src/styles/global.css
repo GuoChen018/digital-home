@@ -98,6 +98,13 @@ figure img {
     overflow: hidden;
 }
 
+figure video {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .img-border img {
     border-radius: var(--border-radius-medium);
     border: 1px solid var(--color-border-light);
@@ -419,11 +426,11 @@ ul {
 }
 
 .text-banner {
-    margin-block-end: 3rem;
+    margin-block-end: 2rem;
 }
 
 .text-d-banner {
-    margin-block-end: 2rem;
+    margin-block-end: 1rem;
 }
 
 .card {
