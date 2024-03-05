@@ -75,11 +75,13 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     </li>
                 </ul>
             </article>
-            <figure>
-                <div class="img-all">
-                    <img src="/images/i-c/inko-hero-1.png" alt="test">
-                </div>
-            </figure>
+            <article class="grid">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-main-hero-30.mp4"></video>
+                    </div>
+                </figure>
+            </article>
         </section>
 
         <!-- Architecture -->
@@ -341,12 +343,12 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     <h2>Spaces are where blocks live</h2>
                 </li>
                 <li class="column-6">
-                    <p>You can name these or change the icon to fit your needs - Work, Personal, Life, Classes, etc.</p>
+                    <p>You can create different spaces to fit your needs and workflow (Daily planner, project, journal, etc)</p>
                 </li>
             </ul>
-            <figure class="column-12">
+            <figure>
                 <div class="img-all">
-                    <img src="/images/i-c/inko-block-hero-2.png" alt="test">
+                    <video class="img-all" autoplay loop src="../../video/inko-cat/inko-space-hero-2.mp4"></video>
                 </div>
             </figure>
         </section>
@@ -360,7 +362,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <article class="grid">
                 <figure class="column-12">
                     <div class="img-all">
-                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-create-space.mp4"></video>
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-space-create-new.mp4"></video>
                     </div>
                 </figure>
             </article>
@@ -375,7 +377,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <article class="grid">
                 <figure class="column-12">
                     <div class="img-all">
-                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-change-space-icon.mp4"></video>
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-space-change-icon.mp4"></video>
                     </div>
                 </figure>
             </article>
@@ -390,7 +392,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <article class="grid">
                 <figure class="column-12">
                     <div class="img-all">
-                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-add-block.mp4"></video>
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-space-add-block.mp4"></video>
                     </div>
                 </figure>
             </article>
@@ -399,7 +401,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <!-- Key feature - customization  -->
         <section class="i-feature-customize">
             <h5>Key Feature #1</h5>
-            <ul class="grid">
+            <ul class="grid text-d-banner">
                 <li class="column-6">
                     <h2>Customize your blocks</h2>
                 </li>
@@ -410,39 +412,58 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <article class="grid">
                 <figure class="column-12">
                     <div class="img-all">
-                        <!-- <video class="img-all" autoplay loop src="../../video/inko-cat/inko-add-block.mp4"></video> -->
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-customize.mp4"></video>
                     </div>
                 </figure>
             </article>
         </section>
         
-        <!-- Key feature - multi-select  -->
-        <section class="i-feature-customize">
-            <h5>Key Features</h5>
-            <ul class="grid">
+        <!-- Key feature - Drag task to any block  -->
+        <section class="i-feature-drag-task">
+            <h5>Key Feature #2</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
-                    <h2>Multi-select and bulk edit</h2>
+                    <h2>Drag your task to any block</h2>
                 </li>
                 <li class="column-6">
-                    <p>You can press SHIFT to multi-select and bulk edit tasks.</p>
+                    <p>You can drag a task from list to calendar, calendar to board, and so on.</p>
                 </li>
             </ul>
             <article class="grid">
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-drag-task-to-block.mp4"></video>
+                    </div>
                 </figure>
             </article>
         </section>
 
-        <!-- Key feature - Google Calendar Integration  -->
-        <section class="i-feature-gcal">
-            <h5>Key Features</h5>
-            <ul class="grid">
+        <!-- Key feature - multi-select  -->
+        <section class="i-feature-multi-select">
+            <h5>Key Feature #3</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
-                    <h2>Connect to your Google Calendar</h2>
+                    <h2>Multi-select and bulk edit</h2>
+                </li>
+                <li class="column-6">
+                    <p>You can press Shift or Shift + drag to multi-select and bulk edit tasks.</p>
+                </li>
+            </ul>
+            <article class="grid">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-multi-select.mp4"></video>
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Key feature - google calendar  -->
+        <section class="i-feature-g-cal">
+            <h5>Key Feature #4</h5>
+            <ul class="grid text-d-banner">
+                <li class="column-6">
+                    <h2>Google Calendar Integration</h2>
                 </li>
                 <li class="column-6">
                     <p>You can view your Google Calendar events on Inko Cat to help time block your day.</p>
@@ -450,23 +471,39 @@ import MainLayout from '../../layouts/MainLayout.astro';
             </ul>
             <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-gcal.mp4"></video>
+                    </div>
                 </figure>
             </article>
         </section>
 
-        <!-- Key feature - Synced Blocks  -->
-        <section class="i-feature-synced-blocks">
-            <h5>Key Features</h5>
-            <ul class="grid">
+        <!-- Key feature - repeating tasks  -->
+        <section class="i-feature-repeating-tasks">
+            <h5>Key Feature #4</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
-                    <h2>Sync blocks</h2>
+                    <h2>Repeating tasks</h2>
+                </li>
+                <li class="column-6">
+                    <p>You can add repeating tasks.</p>
+                </li>
+            </ul>
+            <article class="grid">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-repeating-tasks.mp4"></video>
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Key feature - synced block  -->
+        <section class="i-feature-synced-block">
+            <h5>Key Feature #4</h5>
+            <ul class="grid text-d-banner">
+                <li class="column-6">
+                    <h2>Synced block</h2>
                 </li>
                 <li class="column-6">
                     <p>Use synced blocks in multiple spaces. If you change one, it changes all of them.</p>
@@ -474,16 +511,9 @@ import MainLayout from '../../layouts/MainLayout.astro';
             </ul>
             <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Right click</figcaption>
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Edit a synced block</figcaption>
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                    <figcaption>Used in # spaces</figcaption>
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-synced-block.mp4"></video>
+                    </div>
                 </figure>
             </article>
         </section>
