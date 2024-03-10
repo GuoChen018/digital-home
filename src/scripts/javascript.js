@@ -1,4 +1,4 @@
-const svgItems = document.querySelectorAll('#spaceship');
+const svgItems = document.querySelectorAll('#spaceship, #ping-pong');
 const tooltip = document.createElement('div');
 tooltip.classList.add('tooltip');
 
@@ -8,9 +8,11 @@ svgItems.forEach(item => {
     tooltip.innerHTML = tooltipContent;
     document.body.appendChild(tooltip);
 
+
+    //NEED A NEW WAY TO CALCULATE THIS (RIGHT NOW NOT V GOOD)
     const itemRect = e.target.getBoundingClientRect();
     const tooltipRect = tooltip.getBoundingClientRect();
-
+    
     const x = itemRect.left + itemRect.width / 2 - tooltipRect.width / 2;
     const y = itemRect.top - tooltipRect.height - 10;
 
