@@ -272,6 +272,13 @@ body {
     gap: 1.25rem;
 }
 
+.wide-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -348,6 +355,7 @@ h4 {
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
     color: var(--color-text-primary);
+    margin: 0 0 0.25rem;
 }
 
 h5 {
@@ -443,8 +451,22 @@ ul {
     gap: 0.5rem;
 }
 
+.text-gallery {
+    margin-block-start: 4rem;
+}
+
+.text-gallery-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
 .icon-large {
     font-size: 1.5rem;
+}
+
+.icon-xlarge {
+    font-size: 2rem;
 }
 
 .sub-section {

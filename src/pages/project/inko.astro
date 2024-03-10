@@ -28,7 +28,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     </li>
                     <li class="column-3">
                         <h6>Team</h6>
-                        <p>Ian Huang (Engineer)</p>
+                        <p><a href="https://x.com/shaoruu?s=20" target="_blank">Ian Huang</a>  (Engineer)</p>
                     </li>
                     <li class="column-3">
                         <h6>Duration</h6>
@@ -305,7 +305,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
                     </div>
                     <figcaption>Edge case: Long title</figcaption>
                 </figure>
-                <figure class="column-6">
+                <!-- <figure class="column-6">
                     <div class="img-all">
                         <img src="../../images/i-c/inko-timer-tooltip.png" alt="inko cat">
                     </div>
@@ -316,7 +316,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
                         <img src="../../images/i-c/inko-timer-edit-name.png" alt="inko cat">
                     </div>
                     <figcaption>Edit name cursor hover</figcaption>
-                </figure>
+                </figure> -->
             </article>
         </section>
 
@@ -518,12 +518,12 @@ import MainLayout from '../../layouts/MainLayout.astro';
             </article>
         </section>
 
-        <!-- Key feature - Template Blocks  -->
-        <section class="i-feature-template-blocks">
-            <h5>Key Features</h5>
-            <ul class="grid">
+        <!-- Key feature - template block  -->
+        <section class="i-feature-template-block">
+            <h5>Key Feature #4</h5>
+            <ul class="grid text-d-banner">
                 <li class="column-6">
-                    <h2>Templates block</h2>
+                    <h2>Template block</h2>
                 </li>
                 <li class="column-6">
                     <p>Use template blocks to quickly set up your space.</p>
@@ -531,7 +531,9 @@ import MainLayout from '../../layouts/MainLayout.astro';
             </ul>
             <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-all">
+                        <video class="img-all" autoplay loop src="../../video/inko-cat/inko-feature-template-block.mp4"></video>
+                    </div>
                 </figure>
             </article>
         </section>
@@ -539,7 +541,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <!-- Landing Page  -->
         <section class="i-landing-page">
             <h5>Branding/Marketing</h5>
-            <ul class="grid">
+            <ul class="grid text-d-banner">
                 <li class="column-6">
                     <h2>Landing Page</h2>
                 </li>
@@ -549,13 +551,14 @@ import MainLayout from '../../layouts/MainLayout.astro';
             </ul>
             <article class="grid">
                 <figure class="column-12">
-                    <img src="../../images/testing.png" alt="inko cat">
+                    <div class="img-mid img-border">
+                        <img src="/images/i-c/inko-landing-page-hero.png" alt="test">
+                    </div>
                 </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
-                </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-landing-page-cards.png" alt="inko cat">
+                    </div>
                 </figure>
             </article>
         </section>
@@ -563,48 +566,63 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <!-- Logo  -->
         <section class="i-logo">
             <h5>Branding/Marketing</h5>
-            <ul class="grid">
+            <ul class="grid text-d-banner">
                 <li class="column-6">
                     <h2>Logo</h2>
                 </li>
                 <li class="column-6">
-                    <p>The logo was created thanks to countless iterations on Midjourney AI.</p>
+                    <p>The logo was created after countless iterations on Midjourney AI.</p>
                 </li>
             </ul>
             <article class="grid">
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-logo.png" alt="inko cat">
+                    </div>
                 </figure>
-                <figure class="column-6">
-                    <img src="../../images/testing.png" alt="inko cat">
+                <figure class="column-12">
+                    <div class="img-all">
+                        <img src="../../images/i-c/inko-thank-you-letter.png" alt="inko cat">
+                    </div>
                 </figure>
             </article>
         </section>
 
         <!-- Learnings  -->
         <section class="i-learnings">
-            <h5>Learnings</h5>
-            <h2>One of the most satisfying moments so far and a perfect project for me to hone my skills</h2>
+            <article class="text-banner">
+                <h5>Learnings</h5>
+                <h2>One of the most satisfying moments so far and a perfect project for me to hone my skills</h2>
+            </article>
 
-            <ul class="grid">
-                <li class="column-6">
-                    <img src="/images/logo-inko.png" alt="Inko Cat Logo" width="32" height="32">
-                    <h4>Put it out there</h4>
-                    <p>It took us a long time to put in front of people. But now looking back, we should have showed people what we have as early as possible. Getting feedback early is one of the best things to do for a new product.</p>
+            <ul class="wide-grid text-gallery">
+                <li class="column-6 text-gallery-item">
+                    <i class="ph ph-megaphone icon-xlarge"></i>
+                    <article>
+                        <h3>Put it out there</h3>
+                        <p>Looking back, we should have showed people what we have as early as possible. Getting feedback early is one of the best things to do for a new product.</p>
+                    </article>
                 </li>
-                <li class="column-6">
-                    <img src="/images/logo-inko.png" alt="Inko Cat Logo" width="32" height="32">
-                    <h4>Be proud of what we’ve made</h4>
-                    <p>I admit - I’m not a great pitch person. I’m often afraid that I’m taking up people’s time when promoting Inko Cat. But, I have realized that I wasn’t giving myself or the product a chance. If this is something that has genuinely made my life better (which it did), I’m actually doing people a favor by telling them about it. Be shameless. Be proud.</p>  
+                <li class="column-6 text-gallery-item">
+                    <i class="ph ph-shooting-star icon-xlarge"></i>
+                    <article>
+                        <h3>Be proud of what we’ve made</h3>
+                        <p>I admit - I’m not a great pitch person. I’m often afraid that I’m annoying people when promoting Inko Cat. But, I realized I wasn’t giving the product a chance.</p>  
+                    </article>
                 </li>
-                <li class="column-6">
-                    <img src="/images/logo-inko.png" alt="Inko Cat Logo" width="32" height="32">
-                    <h4>Ship fast</h4>
-                    <p>In early stages, sometimes you just need to ship it. Overthinking often times can kill momentum and delay the timeline.</p>
+                <li class="column-6 text-gallery-item">
+                    <i class="ph ph-boat icon-xlarge"></i>
+                    <article>
+                        <h3>Ship fast</h3>
+                        <p>In early stages, sometimes you just need to ship it. Overthinking oftentimes can kill momentum and delay the timeline.</p>
+                    </article>
                 </li>
-                <li class="column-6">
-                    <img src="/images/logo-inko.png" alt="Inko Cat Logo" width="32" height="32">
-                    <p><strong>Interconnected</strong> - Tasks are all synced. And you can drag them across different types of blocks.</p>  
+                <li class="column-6 text-gallery-item">
+                    <i class="ph ph-paint-brush icon-xlarge"></i>
+                    <article>
+                        <h3>Importance of craft</h3>
+                        <p>This is the first project where I really delved into the details and craft of designing. And I love it.</p>
+                    </article>
                 </li>
             </ul>
         </section>
@@ -612,7 +630,8 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <!-- What's Next  -->
         <section class="i-next">
             <h5>What's Next</h5>
-            <h2>Right now, Ian is working at <a href="https://cursor.sh/" target="_blank">Cursor</a>, and I’m wrapping up my final semester at Tufts. So, though we don’t have a lot of time & big goals, we do intend to work on Inko Cat during nights & weekends. We also plan to apply for buildspace season 5. </h2>
+            <h2>We're still figuring it out</h2>
+            <p>Right now, Ian is working at <a href="https://cursor.sh/" target="_blank">Cursor</a>, and I’m wrapping up my final semester at Tufts. So, though we don’t have a lot of time & big goals, we do intend to work on Inko Cat during nights & weekends. We also plan to apply for <a href="https://buildspace.so/" target="_blank">buildspace</a> season 5.</p>
         </section>
     </main>
 </MainLayout>
