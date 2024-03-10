@@ -215,10 +215,11 @@ body {
 
 #hero-illustration svg {
     width: 100%;
+    margin: 3rem 0;
 }
 
 
-@keyframes block {
+@keyframes spaceship {
     0% {
         transform: translateY(10px);
     }
@@ -230,8 +231,8 @@ body {
     }
 }
 
-#block {
-    animation-name: block;
+#spaceship {
+    animation-name: spaceship;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
@@ -305,6 +306,43 @@ body {
 
 .tag-list {
     margin-block-end: 2rem;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-light);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-medium);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    display: flex;
+    width: 240px; 
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.1);
+}
+
+
+.tooltip-text {
+    margin: 0; 
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-weight: var(--font-weight-reg);
+    font-size: var(--font-size-small);
+    line-height: var(--lh-xlarge);
+}
+  
+.tooltip.show {
+    visibility: visible;
+    opacity: 1; 
+}
+  
+.tooltip-icon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
 }
 
 .project_description {
