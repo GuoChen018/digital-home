@@ -1,5 +1,6 @@
-const svgItems = document.querySelectorAll('#spaceship, #ping-pong');
+const svgItems = document.querySelectorAll('#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101');
 const tooltip = document.createElement('div');
+
 tooltip.classList.add('tooltip');
 
 svgItems.forEach(item => {
@@ -7,22 +8,24 @@ svgItems.forEach(item => {
     const tooltipContent = e.target.dataset.tooltipContent;
     tooltip.innerHTML = tooltipContent;
     document.body.appendChild(tooltip);
-
-
-    //NEED A NEW WAY TO CALCULATE THIS (RIGHT NOW NOT V GOOD)
-    const itemRect = e.target.getBoundingClientRect();
-    const tooltipRect = tooltip.getBoundingClientRect();
     
-    const x = itemRect.left + itemRect.width / 2 - tooltipRect.width / 2;
-    const y = itemRect.top - tooltipRect.height - 10;
 
+    // STILL NEED TO CHANGE THIS!
+    // Set position of tooltip 2rem above the top of the SVG item
+    const rect = item.getBoundingClientRect();
+    const x = rect.left + rect.width / 2 - tooltip.offsetWidth / 2;
+    const y = rect.top - tooltip.offsetHeight - parseFloat(getComputedStyle(tooltip).fontSize) * 1.5;
+    
     tooltip.style.left = `${x}px`;
     tooltip.style.top = `${y}px`;
+    tooltip.style.position = 'fixed';
     tooltip.classList.add('show');
+
   });
 
   item.addEventListener('mouseleave', () => {
     tooltip.classList.remove('show');
     tooltip.remove();
+
   });
 });

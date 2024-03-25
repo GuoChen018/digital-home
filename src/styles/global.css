@@ -39,6 +39,10 @@
     --border-radius-large: 1rem;
 }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 @font-face {
     font-family: 'PlusJakartaSans';
     src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
@@ -237,6 +241,57 @@ body {
     animation-iteration-count: infinite;
 }
 
+@keyframes cube {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#cube {
+    animation-name: cube;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes walk {
+    50% {
+        transform: translate(-15px, 10px);
+    }
+}
+
+#figure-8 {
+    animation-name: walk;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#figure-3 {
+    animation-name: cube;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+svg {
+    position: relative;
+}
+
+#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101 {
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center;
+}
+  
+  #spaceship:hover, #laptop:hover, #ping-pong:hover, #microphone:hover, #cup:hover, #pencil:hover, #cat:hover, #pencil:hover, #art-palette:hover, #taipei-101:hover {
+    /* transform: translateY(-0.5rem); */
+  }
+
+
 .skip {
     position: absolute;
     left: -10000px;
@@ -322,8 +377,21 @@ body {
     width: 240px; 
     align-items: center;
     box-shadow: 2px 4px 10px rgba(89, 89, 89, 0.1);
+    
+    animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+ @keyframes scale-up-bottom {
+    0% {
+      transform: scale(0.5);
+      transform-origin: 50% 100%;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: 50% 100%;
+    }
+  }
+  
 
 .tooltip-text {
     margin: 0; 
