@@ -1,4 +1,4 @@
-const svgItems = document.querySelectorAll('#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101');
+const svgItems = document.querySelectorAll('#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101, #totoro, #pen-tool');
 const tooltip = document.createElement('div');
 
 tooltip.classList.add('tooltip');

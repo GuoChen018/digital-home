@@ -215,11 +215,12 @@ header h3 {
 
 body {
     margin: 0 auto;
+    background-color: var(--color-background-primary);
 }
 
 #hero-illustration svg {
     width: 100%;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 
@@ -243,6 +244,24 @@ body {
 
 @keyframes cube {
     0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#cube {
+    animation-name: cube;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes totoro {
+    0% {
         transform: translateY(10px);
     }
     50% {
@@ -253,11 +272,13 @@ body {
     }
 }
 
-#cube {
-    animation-name: cube;
-    animation-duration: 6s;
+#totoro {
+    animation-name: totoro;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
+
 
 @keyframes walk {
     50% {
@@ -281,16 +302,19 @@ svg {
     position: relative;
 }
 
-#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101 {
+#spaceship, #laptop, #ping-pong, #microphone, #cup, #pencil, #cat, #pencil, #art-palette, #taipei-101, #totoro, #pen-tool {
     position: absolute;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-out;
     transform-origin: center;
 }
   
-  #spaceship:hover, #laptop:hover, #ping-pong:hover, #microphone:hover, #cup:hover, #pencil:hover, #cat:hover, #pencil:hover, #art-palette:hover, #taipei-101:hover {
-    /* transform: translateY(-0.5rem); */
+  #spaceship:hover, #laptop:hover, #ping-pong:hover, #microphone:hover, #cup:hover, #pencil:hover, #cat:hover, #pencil:hover, #art-palette:hover, #taipei-101:hover, #pen-tool:hover {
+    transform: translateY(-0.4rem);
   }
 
+#grid-base {
+    box-shadow: 0 0 40px 100px white inset;
+}
 
 .skip {
     position: absolute;
@@ -341,6 +365,7 @@ svg {
     grid-template-rows: auto;
     gap: 0 1.25rem;
 }
+
 
 .sub-header {
     margin-block-start: 3rem;
