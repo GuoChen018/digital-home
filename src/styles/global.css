@@ -80,6 +80,11 @@ nav, footer{
     padding-right: 3rem;
 }
 
+
+footer {
+    margin-bottom: 2rem;
+}
+
 nav {
     margin: 1.5rem 0 6rem;
 }
@@ -142,11 +147,30 @@ figure video {
 }
 
 /* For image that take up full width & height */
-.img-all { 
+.img-all img { 
     display: flex;
     border-radius: var(--border-radius-medium);
     border: 1px solid var(--color-border-light);
     overflow: hidden;
+}
+
+.bg-ic {
+    background-color: #FFF7ED;
+}
+
+.bg-cn {
+    background-color: var(--color-background-primary);
+    background-image: linear-gradient(to bottom, rgba(184,246,254,0.25) 0%,rgba(254,255,220,0.25) 50.52%,rgba(255,191,211,0.25) 100%);
+}
+
+.bg-dd {
+    background-color: var(--color-background-primary);
+    background-image: linear-gradient(223.45deg, rgba(184,47,255,0.25) -6.71%, rgba(167,51,250,0.25) 12.07%, rgba(78,70,223,0.25) 113.23%);
+    
+}
+
+.bg-rx {
+    background-color: #191B1D;
 }
 
 .img-right img {
@@ -194,13 +218,17 @@ nav a:hover {
     background-color: var(--color-background-secondary);
 }
 
-#project-list, header, .inko-cat {
+#project-list, header, .inko-cat, .creator-now {
     padding-left: 10rem;
     padding-right: 10rem;
 }
 
-#project-list li {
+#project-list .project-list-item {
     margin: 0 0 8rem;
+}
+
+.proj_description li {
+    margin: 0 0 1rem;
 }
 
 .project_description {
@@ -216,6 +244,10 @@ header h3 {
 body {
     margin: 0 auto;
     background-color: var(--color-background-primary);
+}
+
+#hero-illustration {
+    margin: 0 0 2rem;
 }
 
 #hero-illustration svg {
@@ -280,23 +312,73 @@ body {
 
 
 
-@keyframes walk {
+@keyframes walk-side-1 {
     50% {
         transform: translate(-15px, 10px);
     }
 }
 
-#figure-8 {
-    animation-name: walk;
+@keyframes walk-side-2 {
+    50% {
+        transform: translate(15px, -8px);
+    }
+}
+
+@keyframes walk-side-3 {
+    50% {
+        transform: translate(-80px, 40px);
+    }
+}
+
+@keyframes walk-up {
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes walk-down {
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+#figure-2 {
+    animation-name: walk-side-2;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
 #figure-3 {
-    animation-name: cube;
+    animation-name: walk-down;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
+
+#figure-4 {
+    animation-name: walk-side-3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#figure-5 {
+    animation-name: walk-side-2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#figure-8 {
+    animation-name: walk-side-1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#figure-6 {
+    animation-name: walk-up;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
 
 svg {
     position: relative;
@@ -343,6 +425,10 @@ svg {
 
 .logo p {
     margin: 0;
+}
+
+.logo img {
+    border-radius: var(--border-radius-small);
 }
 
 .grid {
@@ -438,8 +524,15 @@ svg {
     border-radius: var(--border-radius-small);
 }
 
-.project_description {
-    width: 50%;
+.proj_description {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    column-gap: 2rem;
+}
+
+.proj_description li {
+    flex: 1;
 }
 
 .column-3 {grid-column-start: span 3;}
