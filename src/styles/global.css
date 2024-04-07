@@ -39,10 +39,6 @@
     --border-radius-large: 1rem;
 }
 
-/* * {
-    outline: 1px solid red;
-} */
-
 @font-face {
     font-family: 'PlusJakartaSans';
     src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
@@ -71,6 +67,14 @@
     font-family: 'PlusJakartaSans';
     src: url('/fonts/PlusJakartaSans-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CommitMono';
+    src: url('/fonts/CommitMono-400-Regular.otf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -147,7 +151,7 @@ figure video {
 }
 
 /* For image that take up full width & height */
-.img-all img { 
+.img-all img, video { 
     display: flex;
     border-radius: var(--border-radius-medium);
     border: 1px solid var(--color-border-light);
@@ -218,7 +222,7 @@ nav a:hover {
     background-color: var(--color-background-secondary);
 }
 
-#project-list, header, .inko-cat, .creator-now {
+#project-list, header, .inko-cat, .creator-now, .datadog, .about {
     padding-left: 10rem;
     padding-right: 10rem;
 }
@@ -591,11 +595,22 @@ h5 {
     margin: 0 0 0.5rem;
 }
 
-h6, figcaption {
+h6 {
     font-family: 'PlusJakartaSans', sans-serif;
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.25rem;
+}
+
+figcaption {
+    font-family: 'CommitMono', sans-serif;
+    font-weight: var(--font-weight-reg);
+    font-size: var(--font-size-small);
+    line-height: var(--lh-xlarge);
+    letter-spacing: .03rem;
     color: var(--color-text-secondary);
     text-transform: uppercase;
     margin: 0.5rem 0 0.25rem;
@@ -627,6 +642,13 @@ a {
     margin: 0 0 0.5rem;
 }
 
+.title-a {
+    font-family: 'PlusJakartaSans', sans-serif;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    margin: 0 0 0.5rem;
+}
+
 a:hover {
     color: var(--color-text-primary);
 }
@@ -645,16 +667,160 @@ ul {
     }
 } */
 
-/* Inko Cat */
-.inko-cat section {
-    margin-block-end: 5rem;
+.timeline, .timeline * {
+    box-sizing: border-box;
 }
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-border-light);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  /* Container around content */
+  .container {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -7px;
+    background-color: var(--color-background-secondary);
+    border: 2px solid var(--color-border-dark);
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+    padding: 0 3rem 4rem 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+    padding: 0 0 4rem 3rem;
+
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -7px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 1.5rem;
+    background-color: var(--color-background-primary);
+    position: relative;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
+    /* overflow-x: hidden; */
+  }
+
+.timeline-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+  
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    animation: slide 16s infinite;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Inko Cat */
+.inko-cat, .creator-now, .datadog, .about {
+    section {
+        margin-block-end: 5rem;
+    }
+}
+    
 .project-grid .column-8{
     margin-block-start: 2rem;
 }
 
 .inko-cat figure {
     /* margin-block-end: 2rem; */
+}
+
+.text-banner-img {
+    margin-block-end: 6rem;
+}
+
+.text-banner-img p {
+    width: 60%;
 }
 
 .text-banner {
@@ -675,15 +841,129 @@ ul {
     gap: 0.5rem;
 }
 
-.text-gallery {
-    margin-block-start: 4rem;
-}
-
 .text-gallery-item {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
+
+.t-gallery {
+    /* margin-top: 4rem; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 1rem;
+    justify-content: space-between;
+}
+
+.t-gallery li {
+    width: 30%;
+}
+
+.card-gallery {
+    /* margin-top: 4rem; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    justify-content: space-between;
+}
+
+.card-gallery li {
+    width: 30.5%;
+}
+
+.card-gallery img {
+    width: 100%;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
+    margin-bottom: 0.5rem;
+}
+
+.link-card li {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.link-card a[href]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+
+.link-card li:hover {
+    transform: translateY(-4px);
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 30%;
+}
+
+.column img {
+    margin-top: 1rem;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image-item .caption {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--color-background-primary);
+    padding: 0.5rem 1rem;
+    opacity: 0;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .image-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .caption h5, p {
+    margin-bottom: 0.25rem;
+  }
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+.column {
+    flex: 48%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
 
 .icon-large {
     font-size: 1.5rem;
@@ -723,6 +1003,51 @@ ul {
     /* .grid figure {
         grid-column-start: span 12;
     } */
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 1200px) {
+    nav, footer, #project-list, header, .inko-cat, .creator-now, .datadog, .about {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .t-gallery li {
+        width: 50%;
+    }
+
+    .card-gallery li {
+        width: 48%;
+    }
+
+    
+
+/* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+
+/* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+/* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 24px;
+    }
+
+/* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .t-gallery li, .card-gallery li{
+        width: 100%;
+    }
 }
 
 

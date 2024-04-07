@@ -4,6 +4,342 @@ import MainLayout from '../layouts/MainLayout.astro'
 ---
 
 <MainLayout title="About" description='My About Page'>
-  <h1>About</h1>
+  <main class="about">
+    <!-- Title + hero + description -->
+    <section class="hero">
+      <ul class="text-banner-img">
+        <h3>Hi! Here’s a bit more about me</h3>
+        <p>My name - Guo - is pronounced as “woah but with a g.” It means “fruit” in Mandarin. I’m moving to New York City soon and will work at Datadog as a product designer after-grad.</p>
+      </ul>
+        <ul class="t-gallery">
+          <li>
+            <h6>What I'm up to</h6>
+            <p>Enjoying final semester at Tufts and working on Inko Cat.</p>
+          </li>
+          <li>
+            <h6>What I love</h6>
+            <p>Cats. Cafe hopping. Table tennis. Anime. J-Pop & Mando-Pop.</p>
+          </li>
+          <li>
+            <h6>Currently obsessed with</h6>
+            <p>A <a href="https://www.youtube.com/watch?v=VbeDEYKJg2c&pp=ygUWcG9ydGVyIHJvYmluc29uIGdlbml1cw%3D%3D" target="_blank">walkthrough</a> of how Porter Robinson’s “Language” was made.</p>
+          </li>
+        </ul>
+    </section>
+
+    <!-- Journey -->
+    <section class="journey">
+        <h2>My Journey</h2>
+        <article class="timeline">
+          <ul class="container left">
+            <li class="content">
+                <p class="tag">Little kid</p>
+                <h3>Drawing comics</h3>
+                <p>I started my creative journey by drawing comics when I was a kid. I remember selling my first comic to my grandmother for 95NTD (~$3).</p>
+            </li>
+          </ul>
+          <ul class="container right">
+            <li class="content">
+              <p class="tag">High school</p>
+              <h3>Then, I got into architecture</h3>
+              <p>My first design interest was architecture. I was fascinated by all the different ways people interacts with a space.</p>
+              <img src="/images/about/arch-1.png" alt="test" class="timeline-img">
+            </li>
+          </ul>
+          <ul class="container left">
+            <li class="content">
+              <p class="tag">High school</p>
+              <h3>Got really into art</h3>
+              <p>But then, I realized architecture wasn't for me. So, I got 200% into art and a bit of physical product design in high school. Seriously, art studio was my 2nd home.</p>
+              <ul class="slider-wrapper">
+                <li class="slider">
+                  <img src="/images/about/art-hoodie.png" alt="test">
+                  <img src="/images/about/art-turtle.png" alt="test">
+                  <img src="/images/about/art-concrete.png" alt="test">
+                  <img src="/images/about/art-spaceship.png" alt="test">
+                  <img src="/images/about/art-diarama.png" alt="test">
+                  <img src="/images/about/art-product.png" alt="test">
+                </li>
+                
+              </ul>
+            </li>
+          </ul>
+          <ul class="container right">
+            <li class="content">
+              <p class="tag">College</p>
+              <h3>Learned about product design</h3>
+              <p>Then, through a Tufts alumni, I learned about UX/product design! And I was instantly hooked to its multidisciplinary nature and opportunity for me to flex my creative muscle.</p>
+            </li>
+          </ul>
+          <ul class="container left">
+            <li class="content">
+              <p class="tag">Gap year</p>
+              <h3>Self doubt, pivot, and return</h3>
+              <p>I took a gap year during Covid 2020-21. At this point, I thought about not doing design and dabbled in music. Eventually, I came back to design because for me, it aligns with my <a href="https://en.wikipedia.org/wiki/Ikigai" target="_blank">ikigai</a>. (I'm trying really hard to not sound cheesy but it's true)</p>
+          </ul>
+          <ul class="container right">
+            <li class="content">
+              <p class="tag">Now</p>
+              <h3>Still going strong!</h3>
+              <p>Thus far, I’ve worked at Datadog, Roblox, Creator Now, and other companies as a product design intern. And I document my design journey through my podcast & blog!</p>
+            </li>
+          </ul>
+        </ul>
+        </article>
+    </section>
+
+    <!-- building -->
+
+    <section class="build">
+      <article class="text-banner">
+        <h2>I love to build</h2>
+        <p>When I have an idea, I do whatever I can to make it happen. Check out what I’ve worked on:</p>
+      </article>
+
+      <ul class="card-gallery link-card">
+        <li>
+          <img src="/images/about/a-njpx.png" alt="test">
+          <h4>
+            <a href="https://rss.com/podcasts/notjustpixels/" target="_blank" class="title-a">Not Just Pixels</a>
+          </h4>
+          <p>Built a design podcast from scratch. Published 37 episodes with over 1K followers.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-blog.png" alt="test">
+          <h4>
+            <a href="https://rss.com/podcasts/notjustpixels/" target="_blank" class="title-a">Blog</a>
+          </h4>
+          <p>I like to write, think, and share ideas. Wrote 60+ articles with over 12K visitors.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-inko.png" alt="test">
+          <h4>
+            <a href="https://www.inko.cat/" target="_blank" class="title-a">Inko Cat</a>
+          </h4>
+          <p>One of the coolest projects I’m working on with the legend Ian. Using it every day.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-dinobud.png" alt="test">
+          <h4>
+            <a href="https://devpost.com/software/dinobud" target="_blank" class="title-a">DinoBud</a>
+          </h4>
+          <p>Worked with Ariya, Aagam, and Sanskar. Won Best Interactivity & Financial Hack at PrincetonHack 2023.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-anytime.png" alt="test">
+          <h4>
+            <a href="https://chromewebstore.google.com/detail/anytime/afenjmeaoeobpikeliigimidhakelggd" target="_blank" class="title-a">AnyTime</a>
+          </h4>
+          <p>A hackathon project during Covid. Won Best Home Improvement in Sunhacks 2020.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-hidden-gems.png" alt="test">
+          <h4>
+            <a href="https://guo-hidden-gem.vercel.app/" target="_blank" class="title-a">Devlog #2: Hidden Gems</a>
+          </h4>
+          <p>A site that displays hidden gems from my Notion database.</p>
+        </li>
+        <li>
+          <img src="/images/about/a-anime.png" alt="test">
+          <h4>
+            <a href="https://guo-anime.netlify.app/" target="_blank" class="title-a">Devlog #1: Anime</a>
+          </h4>
+          <p>Everything about me anime-related (2023 so it's outdated). Built with HTML & SCSS.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- image gallery -->
+    <section class="a-img-gallery">
+      <article class="text-d-banner">
+        <h2>What I love</h2>
+        <p>A curation of what I love (food, hobbies, anime, artists, animals, etc) and brings me a smile to my face
+      </article>
+      <ul class="row">
+        <li class="column">
+          <article class="image-item">
+            <img src="/images/about/cafe.png" alt="test">
+            <article class="caption">
+              <h5>Beautiful cafes</h5>
+              <p style="font-size: 0.875rem">I love quiet, beautiful, and calm working cafes.</p>
+            </article>          </article>
+          <article class="image-item">
+            <img src="/images/about/edgerunner.png" alt="test">
+            <article class="caption">
+              <h5>Cyberpunk Edgerunner</h5>
+              <p style="font-size: 0.875rem">No anime has ever made me feel as emotional as edgerunner. My #1 anime.</p>
+            </article>
+            
+          </article>
+          <article class="image-item">
+            <img src="/images/about/breakfast.png" alt="test">
+            <article class="caption">
+              <h5>Breakfast in Taiwan</h5>
+              <p style="font-size: 0.875rem">Best breakfast ever.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/porter-robinson.png" alt="test">
+            <article class="caption">
+              <h5>Porter Robinson</h5>
+              <p style="font-size: 0.875rem">Love his Nurture album. Also, his 2021 <a href="https://www.youtube.com/watch?v=qMc-4GsuXJc&t=4668s" target="_blank">Language</a> performance - incredible.</p>
+            </article>          
+          </article>
+          <article class="image-item">
+            <img src="/images/about/mando-pop.png" alt="test">
+            <article class="caption">
+              <h5>Vicky Chen</h5>
+              <p style="font-size: 0.875rem">My number 1 Taiwanese singer. Favorite songs: <a href="https://www.youtube.com/watch?v=uaymV2BBD4o" target="_blank">炙愛</a>, <a href="https://www.youtube.com/watch?v=JTJEq0_CTKg&pp=ygUD54yc" target="_blank">猜</a>, <a href="https://www.youtube.com/watch?v=Iddcv_pGaeE&pp=ygUXd2l0aG91dCB5b3UgIHZpY2t5IGNoZW4%3D" target="_blank">Without You (Acoustic)</a></p>
+            </article>  
+          </article>
+          <article class="image-item">
+            <img src="/images/about/ping-pong.png" alt="test">
+            <article class="caption">
+              <h5>Table tennis</h5>
+              <p style="font-size: 0.875rem">It's the sport that I love and have been playing since I was 10.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/deca-dence.png" alt="test">
+            <article class="caption">
+              <h5>Deca Dence</h5>
+              <p style="font-size: 0.875rem">One of my favorite "feel good" animes.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/curry.png" alt="test">
+            <article class="caption">
+              <h5>Curry</h5>
+              <p style="font-size: 0.875rem">Another one of my all-time comfort foods.</p>
+            </article>
+          </article>
+        </li>
+        <li class="column">
+          <article class="image-item">
+            <img src="/images/about/capybara.png" alt="test">
+            <article class="caption">
+              <h5>Capybara</h5>
+              <p style="font-size: 0.875rem">Such a fascinating creature... So ... nonchalant ... and ... chill ...</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/cats.png" alt="test">
+            <article class="caption">
+              <h5>Chunks of cats</h5>
+              <p style="font-size: 0.875rem">I mean... how can you not love that?</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/scallion-pancake.png" alt="test">
+            <article class="caption">
+              <h5>Scallion pancakes</h5>
+              <p style="font-size: 0.875rem">The spot next to my elementary school in Taipei...such good times.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/braised-pork.png" alt="test">
+            <article class="caption">
+              <h5>Braised pork over rice</h5>
+              <p style="font-size: 0.875rem">My favorite Taiwanese food. 10/10 comfort food.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/86.png" alt="test">
+            <article class="caption">
+              <h5>86</h5>
+              <p style="font-size: 0.875rem">Such a beautiful ... and sad story. A special one.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/family.png" alt="test">
+            <article class="caption">
+              <h5>Mahjong with family</h5>
+              <p style="font-size: 0.875rem">Playing mahjong with family is the best.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/ramen.png" alt="test">
+            <article class="caption">
+              <h5>Ramen</h5>
+              <p style="font-size: 0.875rem">I love eating ramen. This is one of my favorite ramens (<a href="https://maps.app.goo.gl/kE1apQ8UAGEXKWzz5" target="_blank">map</a>).</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/bocchi.png" alt="test">
+            <article class="caption">
+              <h5>Bocchi the Rock</h5>
+              <p style="font-size: 0.875rem">The band in this anime is my Spotify #1 in 2023. That's how much I love this anime.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/wonder-egg-priority.png" alt="test">
+            <article class="caption">
+              <h5><a href="https://www.youtube.com/watch?v=2UMMlEjPeEU" target="_blank">Wonder egg priority soundtrack</a></h5>
+              <p style="font-size: 0.875rem">One of the best anime songtracks.</p>
+            </article>
+          </article>
+        </li>
+        <li class="column">
+          <article class="image-item">
+            <img src="/images/about/pixel.png" alt="test">
+            <article class="caption">
+              <h5>Pixel art</h5>
+              <p style="font-size: 0.875rem">I love pixel art - such a beautiful, nostalgic style. Art by <a href="https://www.onionlabs.net/" target="_blank">OnionLabs</a>.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/ado.png" alt="test">
+            <article class="caption">
+              <h5>Ado</h5>
+              <p style="font-size: 0.875rem">One of my favorite Japanese singers. Love too many of her songs (<a href="https://www.youtube.com/watch?v=YnSW8ian29w" target="_blank">蛹</a>, <a href="https://www.youtube.com/watch?v=sOiMD45QGLs" target="_blank">ギラギラ</a>, <a href="https://www.youtube.com/watch?v=1FliVTcX8bQ" target="_blank">新時代</a>)</p>
+            </article>            
+          </article>
+          <article class="image-item">
+            <img src="/images/about/night-market.png" alt="test">
+            <article class="caption">
+              <h5>Night market</h5>
+              <p style="font-size: 0.875rem">Late nights at Taiwanese night market is a vibe.</p>
+            </article>     
+          </article>
+          <article class="image-item">
+            <img src="/images/about/frieren.png" alt="test">
+            <article class="caption">
+              <h5>Frieren</h5>
+              <p style="font-size: 0.875rem">Incredible character designs, art, and most of all - the pacing.</p>
+            </article>     
+          </article>
+          <article class="image-item">
+            <img src="/images/about/yoasobi.png" alt="test">
+            <article class="caption">
+              <h5>YOASOBI</h5>
+              <p style="font-size: 0.875rem">At this point, I can't even count how YOASOBI songs I love.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/yorushika.png" alt="test">
+            <article class="caption">
+              <h5>Yorushika</h5>
+              <p style="font-size: 0.875rem">The song <a href="https://www.youtube.com/watch?v=j83OVgv6woA&pp=ygUSbmF1dGlsdXMgeW9ydXNoaWth" target="_blank">"Nautilus"</a> is my favorite song during gap year 2020-21.</p>
+            </article>
+          </article>
+          <article class="image-item">
+            <img src="/images/about/cold-noodles.png" alt="test">
+            <article class="caption">
+              <h5>Cold noodles</h5>
+              <p style="font-size: 0.875rem">My favorite cold noodle place in Taipei (<a href="https://maps.app.goo.gl/Lx4DPW7ksU9CNHZy7" target="_blank">map</a>).</p>
+            </article>     
+          </article>
+          <article class="image-item">
+            <img src="/images/about/kenshi.png" alt="test">
+            <article class="caption">
+              <h5>Kenshi Yonezu</h5>
+              <p style="font-size: 0.875rem">Nope this is not me (I wish). One of my favorite Japanese artists.</p>
+            </article>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+  </main> 
 </MainLayout>
 
