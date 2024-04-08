@@ -355,7 +355,7 @@ body::before {
     }
     100% {
       opacity: 0;
-      position: relative;
+      z-index: -1;
     }
 }
 
