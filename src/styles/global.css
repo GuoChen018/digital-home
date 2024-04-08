@@ -1,11 +1,21 @@
 :root {
 
     /* Font */
-    --font-size-small: 0.875rem;
-    --font-size-medium: 1rem; 
-    --font-size-large: 1.25rem; 
-    --font-size-xlarge: 1.75rem; 
-    --font-size-xxlarge: 2rem;
+
+    /* h6, caption  */
+    --font-size-small: clamp(0.813rem, 0.063vw + 0.8rem, 0.875rem);
+
+    /* paragraph  */
+    --font-size-medium: 1rem;
+
+    /* h3 */
+    --font-size-large: clamp(1rem, 0.25vw + 1rem, 1.25rem);
+
+    /* h2 */
+    --font-size-xlarge: clamp(1.25rem, 0.5vw + 1.15rem, 1.75rem);
+
+    /* h1 */
+    --font-size-xxlarge: clamp(1.5rem, 0.625vw + 1.375rem, 2.125rem);
 
     --font-weight-reg: 400; 
     --font-weight-medium: 500; 
@@ -39,6 +49,7 @@
     --border-radius-large: 1rem;
 
     --nav-height: 60px;
+    --illustration-height: clamp(30rem, 20vw + 21rem, 45rem);
 }
 
 @font-face {
@@ -129,6 +140,7 @@ nav ul {
     margin: 0;    
 }
 
+
 nav li {
     /* flex-grow: 0.5; */
     text-align: center;
@@ -169,7 +181,7 @@ figure video {
 
 /* For image that's aligned to the center */
 .img-mid {
-    padding: 4rem;
+    padding: clamp(1.5rem, 2.5vw + 1rem, 4rem);
     background-color: var(--color-background-tertiary);
     border-radius: var(--border-radius-medium);
     border: 1px solid var(--color-border-light);
@@ -282,6 +294,10 @@ nav a:hover {
     margin: 0 0 1rem;
 }
 
+.proj_description .proj_pos {
+    color: var(--color-text-primary);
+}
+
 .project_description {
     margin: 0 0 1.25rem;
 }
@@ -300,6 +316,11 @@ body {
     margin: 0 auto;
     background-color: var(--color-background-primary);
     padding-top: 140px;
+}
+
+.svg-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 #hero-illustration {
@@ -491,7 +512,12 @@ svg {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    gap: 1.25rem;
+    column-gap: 1.25rem;
+    row-gap: 0;
+}
+
+.grid figure {
+    margin-bottom: 1.25rem;
 }
 
 .wide-grid {
@@ -499,6 +525,7 @@ svg {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 3rem;
+    width: 100%;
 }
 
 .project-grid {
@@ -842,12 +869,12 @@ ul {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.slider::-webkit-scrollbar {
+.slider::-webkit-scrollbar, .svg-container::-webkit-scrollbar{
     display: none;
 }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-.slider {
+.slider, .svg-container {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -868,11 +895,25 @@ ul {
 }
 
 .text-banner-img {
+    display: flex;
+    flex-direction: row;
     margin-block-end: 6rem;
+    gap: 1.5rem;
 }
 
 .text-banner-img p {
-    width: 60%;
+    width: 80%;
+}
+
+.text-banner-img li {
+    flex: 1;
+}
+
+.text-banner-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--color-border-light);
 }
 
 .text-banner {
@@ -906,6 +947,10 @@ ul {
     row-gap: 3rem;
     column-gap: 1rem;
     justify-content: space-between;
+}
+
+.i-what-is-inko-cat h3 {
+    margin: 0 0 1rem;
 }
 
 .t-gallery li {
@@ -1033,9 +1078,13 @@ ul {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    
+    .text-banner-img {
+        flex-direction: column;
+    }
 
     .t-gallery li {
-        width: 50%;
+        width: 49%;
     }
 
     .card-gallery li {
@@ -1051,25 +1100,34 @@ ul {
         margin-top: 1rem;
     }
 
+    .journey h2 {
+        margin-bottom: 1.5rem;
+    }
+
 /* Place the timelime to the left */
     .timeline::after {
-    left: 31px;
+        left: 20px;
     }
 
 /* Full-width containers */
     .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 50px;
+        /* padding-right: 25px; */
     }
 /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-    left: 24px;
+    left: 13px;
     }
 
 /* Make all right containers behave like the left ones */
     .right {
-    left: 0%;
+        left: 0%;
+        /* padding: 0; */
+    }
+    
+    .left {
+        padding-right: 0;
     }
 }
 
@@ -1085,13 +1143,14 @@ ul {
         grid-column-start: span 12;
     }
 
-    .grid {
+    /* .grid {
         row-gap: 1rem;
-    }
+    } */
 
     header h3 {
         width: 100%;
     }
+
 
     h2 {
         width: 100%;
@@ -1114,6 +1173,11 @@ ul {
 @media screen and (max-width: 740px) {
     .t-gallery li, .card-gallery li{
         width: 100%;
+    }
+
+    #hero-illustration svg {
+        width: 200%;
+        margin: 1rem 0;
     }
 }
 
