@@ -37,6 +37,8 @@
     --border-radius-small: 0.5rem;
     --border-radius-medium: 0.75rem;
     --border-radius-large: 1rem;
+
+    --nav-height: 60px;
 }
 
 @font-face {
@@ -87,15 +89,57 @@ nav, footer{
 
 footer {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-links > * {
+    margin-bottom: 0;
+}
+
+
 nav {
-    margin: 1.5rem 0 6rem;
+    /* margin: 1.5rem 0 6rem; */
+    /* width: 100%; */
+    height: var(--nav-height);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.4s ease-in;
 }
 
 nav ul {
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;    
+}
+
+nav li {
+    /* flex-grow: 0.5; */
+    text-align: center;
+}
+
+.nav--hidden {
+    transform: translateY(calc(-1*var(--nav-height)));
+}
+
+nav .icon {
+    display: none;
 }
 
 figure {
@@ -216,9 +260,12 @@ nav a {
     border-radius: var(--border-radius-small);
     padding: 0.5rem 0.75rem; 
     text-align: center;
+    transition: background-color 0.2s ease-in-out;
+
 }
 
 nav a:hover {
+    
     background-color: var(--color-background-secondary);
 }
 
@@ -245,9 +292,14 @@ header h3 {
     width: 70%;
 }
 
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     margin: 0 auto;
     background-color: var(--color-background-primary);
+    padding-top: 140px;
 }
 
 #hero-illustration {
@@ -610,7 +662,7 @@ figcaption {
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
-    letter-spacing: .03rem;
+    letter-spacing: .04rem;
     color: var(--color-text-secondary);
     text-transform: uppercase;
     margin: 0.5rem 0 0.25rem;
@@ -938,7 +990,6 @@ ul {
     transform: translateY(20px);
     transition: opacity 0.3s, transform 0.3s;
   }
-  
   .image-item:hover .caption {
     opacity: 1;
     transform: translateY(0);
@@ -947,22 +998,6 @@ ul {
   .caption h5, p {
     margin-bottom: 0.25rem;
   }
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
-.column {
-    flex: 48%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-.column {
-    flex: 100%;
-    max-width: 100%;
-}
-}
 
 
 .icon-large {
@@ -992,24 +1027,11 @@ ul {
     }
 }
 
-@media (max-width: 1000px) {
-    .column-3,
-    .column-6,
-    .column-4,
-    .column-8 {
-        grid-column-start: span 12;
-    }
-
-    /* .grid figure {
-        grid-column-start: span 12;
-    } */
-}
-
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 1200px) {
     nav, footer, #project-list, header, .inko-cat, .creator-now, .datadog, .about {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .t-gallery li {
@@ -1020,7 +1042,14 @@ ul {
         width: 48%;
     }
 
-    
+    footer {
+        flex-direction: column;
+    }
+
+    footer > * {
+        width: 100%;
+        margin-top: 1rem;
+    }
 
 /* Place the timelime to the left */
     .timeline::after {
@@ -1041,6 +1070,44 @@ ul {
 /* Make all right containers behave like the left ones */
     .right {
     left: 0%;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 48%;
+    }
+    .column-3,
+    .column-6,
+    .column-4,
+    .column-8 {
+        grid-column-start: span 12;
+    }
+
+    .grid {
+        row-gap: 1rem;
+    }
+
+    header h3 {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .proj_description {
+        flex-direction: column;
     }
 }
 
