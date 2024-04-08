@@ -488,7 +488,8 @@ svg {
 
 .skip:focus {
     position: absolute;
-    left: 40px;
+    left: 20px;
+    top: 70px;
     width: auto;
     height: auto;
 }

@@ -30,18 +30,22 @@ import '../styles/global.css';
         <script>
             // Enable hidden nav bar
             {
-            const nav = document.querySelector("nav");
-            let lastScrollY = window.scrollY;
+                window.addEventListener('load', function() {
+                    document.body.classList.add('fade-in');
+                });
+                
+                const nav = document.querySelector("nav");
+                let lastScrollY = window.scrollY;
 
-            window.addEventListener("scroll", () => {
-                if (lastScrollY < window.scrollY) {
-                nav.classList.add("nav--hidden");
-                } else {
-                nav.classList.remove("nav--hidden");
-                }
+                window.addEventListener("scroll", () => {
+                    if (lastScrollY < window.scrollY) {
+                    nav.classList.add("nav--hidden");
+                    } else {
+                    nav.classList.remove("nav--hidden");
+                    }
 
-                lastScrollY = window.scrollY;
-            });
+                    lastScrollY = window.scrollY;
+                });
             }
         </script>
 	</body>

@@ -16,6 +16,7 @@ svgItems.forEach(item => {
     const x = rect.left + rect.width / 2 - tooltip.offsetWidth / 2;
     const y = rect.top - tooltip.offsetHeight - parseFloat(getComputedStyle(tooltip).fontSize) * 1.5;
     
+    
     tooltip.style.left = `${x}px`;
     tooltip.style.top = `${y}px`;
     tooltip.style.position = 'fixed';
