@@ -339,7 +339,7 @@ body {
 
 body::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -347,7 +347,7 @@ body::before {
     background-color: var(--color-background-primary);
     z-index: 9999;
     animation: fadeOut 0.5s ease-in-out forwards;
-    animation-delay: 0.75s;
+    animation-delay: 1s;
 }
 
 @keyframes fadeOut {
