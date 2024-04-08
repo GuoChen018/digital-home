@@ -20,21 +20,5 @@ const {title, description} = Astro.props;
     
     <title>{title}</title>
     <meta name="description" content={description}/>
-
-    <style> 
-      .fade-in {
-        opacity: 0;
-        animation: fadeIn 2s ease-in-out forwards;
-      }
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
 </head>
 
