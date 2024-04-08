@@ -334,12 +334,11 @@ body {
     margin: 0 auto;
     background-color: var(--color-background-primary);
     padding-top: 140px;
-    /* animation: fadeIn 1s ease-in-out 0.5s forwards; */
 }
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
