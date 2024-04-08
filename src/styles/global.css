@@ -341,15 +341,15 @@ body {
 body > *:not(nav) {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
