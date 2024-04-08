@@ -334,10 +334,9 @@ body {
     margin: 0 auto;
     background-color: var(--color-background-primary);
     padding-top: 140px;
-    /* animation: fadeIn 0.4s ease-in-out forwards; */
 }
 
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -370,7 +369,7 @@ body::before {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 .svg-container {
     overflow-x: auto;
