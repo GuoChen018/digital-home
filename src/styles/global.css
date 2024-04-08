@@ -525,7 +525,7 @@ svg {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 3rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 .project-grid {
@@ -1160,6 +1160,12 @@ ul {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
+
+    .wide-grid {
+        width: 100%;
+        column-gap: 0;
+    }
+
     .column {
         flex: 100%;
         max-width: 100%;
@@ -1171,7 +1177,7 @@ ul {
 }
 
 @media screen and (max-width: 740px) {
-    .t-gallery li, .card-gallery li{
+    .t-gallery li, .card-gallery li, .text-gallery li{
         width: 100%;
     }
 
