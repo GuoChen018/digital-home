@@ -28,6 +28,11 @@ import '../styles/global.css';
         </slot>
         <MainFooter/>
         <script>
+            window.addEventListener('load', function() {
+                document.body.style.opacity = '';
+            });
+        </script>
+        <script>
             // Enable hidden nav bar
             {
                 const nav = document.querySelector("nav");
