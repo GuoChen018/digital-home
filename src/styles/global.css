@@ -361,6 +361,10 @@ body {
   }
 */
 
+body > *:not(nav) {
+    animation: fadeIn 0.75s;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
