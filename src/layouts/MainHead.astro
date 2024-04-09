@@ -17,6 +17,11 @@ const {title, description} = Astro.props;
       type="text/css"
       href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Regular.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Medium.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Bold.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-SemiBold.ttf" type="font/ttf" crossorigin>
+
     
     <title>{title}</title>
     <meta name="description" content={description}/>
