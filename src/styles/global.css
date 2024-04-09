@@ -994,11 +994,16 @@ ul {
     display: flex;
     flex-direction: row;
     margin-block-end: 6rem;
-    gap: 1.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .text-banner-img p {
     width: 80%;
+}
+
+.text-banner-img h2 {
+    margin-bottom: 0.75rem;
 }
 
 .text-banner-img li {
@@ -1136,7 +1141,7 @@ ul {
     transform: translateY(0);
   }
 
-  .caption h5, p {
+  .caption h5 {
     margin-bottom: 0.25rem;
   }
 
@@ -1273,7 +1278,7 @@ ul {
 }
 
 @media screen and (max-width: 740px) {
-    .t-gallery li, .card-gallery li, .text-gallery li{
+    .t-gallery li, .card-gallery li, .text-gallery li, .text-banner-img p{
         width: 100%;
     }
 
