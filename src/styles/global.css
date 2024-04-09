@@ -359,6 +359,7 @@ body {
       position: relative;
     }
   }
+*/
 
 @keyframes fadeIn {
     0% {
@@ -369,7 +370,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-} */
+} 
 
 .svg-container {
     overflow-x: auto;
