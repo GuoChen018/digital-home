@@ -364,7 +364,6 @@ body {
 
 body > *:not(nav) {
     animation: fadeIn 0.75s ease-in;
-    animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
