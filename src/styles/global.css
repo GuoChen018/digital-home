@@ -395,13 +395,13 @@ body > *:not(nav) {
 
 @keyframes spaceship {
     0% {
-        transform: translateY(10px);
+        transform: translateY(0);
     }
     50% {
         transform: translateY(-10px);
     }
     100% {
-        transform: translateY(10px);
+        transform: translateY(0);
     }
 }
 
@@ -409,6 +409,7 @@ body > *:not(nav) {
     animation-name: spaceship;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 @keyframes cube {
@@ -431,20 +432,21 @@ body > *:not(nav) {
 
 @keyframes totoro {
     0% {
-        transform: translateY(10px);
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(10px);
+        transform: translateY(0);
     }
 }
 
 #totoro {
     animation-name: totoro;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 
@@ -483,36 +485,42 @@ body > *:not(nav) {
     animation-name: walk-side-2;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 #figure-3 {
     animation-name: walk-down;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 #figure-4 {
     animation-name: walk-side-3;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 #figure-5 {
     animation-name: walk-side-2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 #figure-8 {
     animation-name: walk-side-1;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 #figure-6 {
     animation-name: walk-up;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 
