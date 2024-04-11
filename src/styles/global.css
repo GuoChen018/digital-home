@@ -1356,6 +1356,10 @@ ul {
     .container {
         padding-left: 40px;
     }
+
+    h5 {
+        font-size: 0.875rem;
+    }
 }
 
 
