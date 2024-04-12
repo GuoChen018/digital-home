@@ -484,42 +484,42 @@ body > *:not(nav) {
     animation-name: walk-side-2;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 #figure-3 {
     animation-name: walk-down;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 #figure-4 {
     animation-name: walk-side-3;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 #figure-5 {
     animation-name: walk-side-2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 #figure-8 {
     animation-name: walk-side-1;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 #figure-6 {
     animation-name: walk-up;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    /* animation-delay: 1s; */
+    animation-delay: 1.5s;
 }
 
 
