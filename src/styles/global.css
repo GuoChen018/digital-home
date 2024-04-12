@@ -426,6 +426,7 @@ body > *:not(nav) {
     animation-name: cube;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-delay: 1.5s;
 }
 
 @keyframes totoro {
