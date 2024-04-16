@@ -53,46 +53,6 @@
     --card-padding: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem);
 }
 
-@font-face {
-    font-family: 'PlusJakartaSans';
-    src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PlusJakartaSans';
-    src: url('/fonts/PlusJakartaSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PlusJakartaSans';
-    src: url('/fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PlusJakartaSans';
-    src: url('/fonts/PlusJakartaSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'CommitMono';
-    src: url('/fonts/CommitMono-400-Regular.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
 nav, footer{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -609,7 +569,7 @@ svg {
 }
 
 .tag {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
@@ -661,7 +621,7 @@ svg {
 
 .tooltip-text {
     margin: 0; 
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
@@ -733,7 +693,7 @@ svg {
 }
 
 h1 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xxlarge);
     line-height: var(--lh-small);
@@ -742,7 +702,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xlarge);
     line-height: var(--lh-large);
@@ -752,7 +712,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-large);
     line-height: var(--lh-xlarge);
@@ -761,7 +721,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
@@ -770,7 +730,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
@@ -779,7 +739,7 @@ h5 {
 }
 
 h6 {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
@@ -789,7 +749,7 @@ h6 {
 }
 
 figcaption {
-    font-family: 'CommitMono', sans-serif;
+    font-family: var(--font-commit);
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-small);
     line-height: var(--lh-xlarge);
@@ -801,7 +761,7 @@ figcaption {
 
 
 p {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
@@ -810,7 +770,7 @@ p {
 }
 
 strong {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
     line-height: var(--lh-xlarge);
@@ -818,7 +778,7 @@ strong {
 }
 
 a {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     color: var(--color-text-secondary);
     text-decoration-thickness: .9px; 
     text-underline-offset: 3px;
@@ -826,7 +786,7 @@ a {
 }
 
 .title-a {
-    font-family: 'PlusJakartaSans', sans-serif;
+    font-family: var(--font-sans);
     color: var(--color-text-primary);
     text-decoration: none;
     margin: 0 0 0.5rem;
