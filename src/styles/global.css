@@ -45,7 +45,7 @@
     --color-text-secondary: var(--color-gray-6);
 
     --border-radius-small: 0.5rem;
-    --border-radius-medium: 0.75rem;
+    --border-radius-medium: clamp(0.25rem, 0.5vw + 0.15rem, 0.75rem);
     --border-radius-large: 1rem;
 
     --nav-height: 60px;
