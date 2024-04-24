@@ -1,9 +1,19 @@
 ---
 layout: ../../layouts/MainPost.astro
-title: 'My First Blog Post'
+title: 'How I Built My New Portfolio'
 date: '2021-10-10'
 author: 'Guo Chen'  
 tags: ['astro', 'successes']
+
 ---
-Today is a beautiful day.
+
+![An art palette on a light pink background.](/images/blog/portfolio/thumbnail.jpg)
+
+```javascript 
+
+item.addEventListener('mouseleave', () => {
+    tooltip.classList.remove('show');
+    tooltip.remove();
+    
+```
 

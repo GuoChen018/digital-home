@@ -4,8 +4,13 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 ---
 <MainLayout title={frontmatter.title} description={frontmatter.description}>
+    <main class="blog-post">
+        <h1>{frontmatter.title}</h1>
+        <slot />
+    </main>
 
-    <h1>{frontmatter.title}</h1>
-    <slot />
+    <style>
+        
+    </style>
 
 </MainLayout>
