@@ -6,14 +6,19 @@ const allPosts = await Astro.glob('../pages/blog/*.md');
 
 ---
 
-<MainLayout title="Blog" description='My Blog'>
+<MainLayout title="Blog" description='My Blog' thumbnail="/images/og-img.jpg">
   <main class="blog">
+
     <h1>Blog</h1>
-    
-    {allPosts.map((post) => 
-      <li>
+    <ul class="blog-list">
+      {allPosts.reverse().map((post) => 
+        <li class="blog-row">
           <a href={post.url}>{post.frontmatter.title}</a>
-      </li>)}
+          <p>{post.frontmatter.date}</p>
+        </li>)
+      }
+    </ul>
+      
   </main>
 </MainLayout>
 

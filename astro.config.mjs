@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import astroOGImage from "astro-og-image";
 
 // https://astro.build/config
 export default defineConfig({
@@ -6,12 +7,12 @@ export default defineConfig({
       shikiConfig: {
         // Choose from Shiki's built-in themes (or add your own)
         // https://shiki.style/themes
-        theme: 'dracula',
+        theme: 'catppuccin-mocha',
         // Alternatively, provide multiple themes
         // https://shiki.style/guide/dual-themes
         themes: {
-          light: 'github-dark',
-          dark: 'github-dark',
+          light: 'catppuccin-mocha',
+          dark: 'catppuccin-mocha',
         },
         // Add custom languages
         // Note: Shiki has countless langs built-in, including .astro!

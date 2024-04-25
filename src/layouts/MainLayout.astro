@@ -6,11 +6,13 @@ import Nav from './Nav.astro';
 interface Props {
     title: string; 
     description: string;
+    thumbnail: string;
 }
 
 const {
     title = "Guo's Portfolio",
     description = "The digital home I always wanted",
+    thumbnail = "/images/og-img.jpg"
 } = Astro.props as Props;
 
 import '../styles/global.css';
@@ -18,7 +20,7 @@ import '../styles/global.css';
 ---
 
 <html lang="en">
-	<MainHead {title} {description}/>
+	<MainHead {title} {description} {thumbnail}/>
     
 	<body>
         <a href="#main" class="skip">Skip to main content</a>
