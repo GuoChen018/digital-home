@@ -5,7 +5,7 @@ description: "Podcast, blog, new portfolio, and upcoming graduation"
 date: 'April 15, 2024'
 author: 'Guo Chen'  
 tags: ['astro', 'successes']
-thumbnail: /blog/01-life-update/thumbnail.jpg
+thumbnail: /images/blog/01-life-update/thumbnail.jpg
 ---
 
 ![leaf emoji on a green background](/images/blog/01-life-update/thumbnail.jpg)
