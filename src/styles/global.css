@@ -311,6 +311,10 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.blog {
+    height: calc(100vh - 200px);
+}
+
 pre {
     margin-top: 1rem;
 	padding: 0 1.5rem;
@@ -1384,11 +1388,16 @@ ul {
 
     footer {
         flex-direction: column;
+        margin-bottom: 1rem;
     }
 
     footer > * {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .blog {
+        height: calc(100vh - 240px);
     }
 
 /* Place the timelime to the left */
