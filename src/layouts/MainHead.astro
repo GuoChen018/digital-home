@@ -28,13 +28,13 @@ const { frontmatter } = Astro.props;
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content={title}/>
     <meta property="og:description" content={description}/>
-    <meta property="og:image" content={thumbnail} />
+    <meta property="og:image" content={thumbnail}/>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content={title}/>
     <meta name="twitter:description" content={description}/>
-    <meta name="twitter:image" content={thumbnail}/>
+    <meta name="twitter:image" content={`https://www.guochen.design${thumbnail}`} />
 
 </head>
 
