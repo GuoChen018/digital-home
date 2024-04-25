@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MainPost.astro
-title: 'How I Built My New Portfolio'
+title: 'How I built my new portfolio'
 description: "Deep dive into the design and code"
 date: 'April 23, 2024'
 author: 'Guo Chen'  

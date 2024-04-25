@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MainPost.astro
-title: "It's Been Awhile: Life + Design Update"
+title: "It's been awhile: Life + design update"
 description: "Podcast, blog, new portfolio, and upcoming graduation"
 date: 'April 15, 2024'
 author: 'Guo Chen'  
