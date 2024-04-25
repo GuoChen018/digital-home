@@ -3,7 +3,6 @@ layout: ../../layouts/MainPost.astro
 title: "It's been awhile: Life + design update"
 description: "Podcast, blog, new portfolio, and upcoming graduation"
 date: 'April 15, 2024'
-author: 'Guo Chen'  
 tags: ['astro', 'successes']
 thumbnail: /images/blog/01-life-update/thumbnail.jpg
 ---
