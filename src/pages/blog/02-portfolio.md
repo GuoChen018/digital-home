@@ -5,8 +5,7 @@ description: "Deep dive into the design and code"
 date: 'April 23, 2024'
 author: 'Guo Chen'  
 tags: ['design', 'successes']
-thumbnail: /images/blog/02-portfolio/thumbnail.jpg
-slug: new-portfolio
+thumbnail: /blog/02-portfolio/thumbnail.jpg
 ---
 
 <!-- The margin for heading should be margin-top // paragraph margin-top:0.5rem -->
