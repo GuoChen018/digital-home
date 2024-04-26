@@ -3,7 +3,7 @@ layout: ../../layouts/MainPost.astro
 title: "It's been awhile: Life + design update"
 description: "Podcast, blog, new portfolio, and upcoming graduation"
 date: 'April 15, 2024'
-tags: ['astro', 'successes']
+tags: ['design', 'life', 'reflection']
 thumbnail: /images/blog/01-life-update/thumbnail.jpg
 ---
 

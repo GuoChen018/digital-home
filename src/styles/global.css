@@ -347,6 +347,10 @@ pre > code .line {
         margin-bottom: 0;
     }
 
+    h1 {
+        margin-bottom: 2rem;
+    }
+
     h2 {
         margin-top: 2.5rem;
     }
@@ -412,6 +416,10 @@ pre > code .line {
 
 .subscribe {
     margin: 3rem 0;
+}
+
+.blog-list {
+    margin-top: 1rem;
 }
 
 /* .blog-list li {

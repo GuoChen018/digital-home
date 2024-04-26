@@ -3,7 +3,7 @@ layout: ../../layouts/MainPost.astro
 title: 'How I built my new portfolio'
 description: "Deep dive into the design and code"
 date: 'April 23, 2024'
-tags: ['design', 'successes']
+tags: ['design', 'coding']
 thumbnail: /images/blog/02-portfolio/thumbnail.jpg
 ---
 
