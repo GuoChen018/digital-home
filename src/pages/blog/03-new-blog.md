@@ -11,13 +11,13 @@ thumbnail: /images/blog/03-new-blog/thumbnail.jpg
 
 ## Why a new blog
 
-In my [last blog](https://www.guochen.design/blog/01-life-update), I noted that I will be moving from Webflow to Substack. I listed out several reasons why I’m switching, and I even copied and pasted 68 articles into Substack.
+In my [last blog](https://www.guochen.design/blog/01-life-update), I noted that I would be moving from Webflow to Substack. I listed out several reasons why I’m switching, and I even copied and pasted 68 articles into Substack.
 
-But, after I posted my Substack article on [Twitter](https://x.com/guo_hq/status/1782777051012821133), my tweet engagement was extremely low. And the social preview doesn’t show up. The image below is just an image. It’s not linked to my Substack post.
+But, after I posted my Substack article on [Twitter](https://x.com/guo_hq/status/1782777051012821133), my tweet engagement was extremely low. And the social preview didn't show up. The image below was just an image. It wasn't linked to my Substack post.
 
 ![Guo’s tweet sharing his Substack article](/images/blog/03-new-blog/substack-tweet.jpg)
 
-Confused, I searched online to understand why. And that’s when I learned that:
+Confused, I searched online to understand why. And that was when I learned that:
 
 > Elon does not like Substack ([link](https://www.zdnet.com/article/twitter-vs-substack-feud-everything-you-need-to-know-and-how-it-affects-you/)). So Twitter doesn’t display any Substack social previews.
 > 
@@ -27,7 +27,7 @@ I’m not sure if my low tweet engagement was because of Substack. But regardles
 1. Add a domain to my substack blog + pay $50 to do so
 2. Build my own blog in my portfolio
 
-Honestly, as a person who loves to build, the second option is a no-brainer. Plus, one of the biggest drawbacks of Substack is the lack of customization. So, I decided to build my own blog.
+Honestly, as a person who loves to build, the second option was a no-brainer. Plus, one of the biggest drawbacks of Substack is the lack of customization. So, I decided to build my own blog.
 
 In this post, I won’t go over the specific details of “how” to build a blog with Astro. There are plenty of amazing resources out there. The ones that helped me the most were
 
@@ -207,9 +207,9 @@ At first, I added the standard open graph code in my `<head>`.
 
 But, the image preview just won’t show up on Twitter. I searched tons of articles and videos. It just wasn’t working.
 
-Then, I realized two important things that fixed it.
+Then, I realized there were two problems and fixed them. 
 
-### My og:image is set up incorrectly
+### Problem 1: My og:image is set up incorrectly
 
 This was my code originally:
 
@@ -231,7 +231,7 @@ So I changed it to the following:
 
 This ensured that the content would point to the right image link. An example is https://www.guochen.design/images/blog/02-portfolio/thumbnail.jpg.
 
-### Twitter has a different open graph
+### Problem 2: Twitter has a different open graph
 
 For some reason, Twitter likes to be different. There was a separate code I needed to add to show the open graph images on Twitter.
 
