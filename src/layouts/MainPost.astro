@@ -3,9 +3,18 @@ const { frontmatter } = Astro.props;
 import MainLayout from '../layouts/MainLayout.astro';
 
 ---
-<MainLayout title={frontmatter.title} description={frontmatter.description}>
+<MainLayout title={frontmatter.title} description={frontmatter.description} thumbnail={frontmatter.thumbnail}>
+    <main class="blog-post">
+        <h1>{frontmatter.title}</h1>
+        <!-- <h5>{frontmatter.date}</h5> -->
+        <slot />
 
-    <h1>{frontmatter.title}</h1>
-    <slot />
-
+        <section class="subscribe">
+            <h4>Want to stay updated?</h4>
+            <p>
+                Subscribe to my newsletter to get the latest updates on new blog posts and cool design finds!
+            </p>
+            <iframe src="https://guochen.substack.com/embed" width="100%" height="320px" style="border:1px solid #EEE; background:white; border-radius: var(--border-radius-medium); margin-top: 1rem;" frameborder="0" scrolling="no"></iframe>
+        </section>
+    </main>
 </MainLayout>

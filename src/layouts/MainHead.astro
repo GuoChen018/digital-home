@@ -1,5 +1,6 @@
 ---
-const {title, description} = Astro.props;
+const {title, description, thumbnail} = Astro.props;
+const { frontmatter } = Astro.props;
 
 import { join } from "node:path";
 import { AstroFont } from "astro-font";
@@ -69,6 +70,18 @@ const makeFontPath = (path: string) => join(process.cwd(), 'public', 'fonts', pa
       ]}
     />
     <link rel="icon" type="image/png" href="/images/favicon.png">
+
     <title>{title}</title>
     <meta name="description" content={description}/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:image" content={`https://www.guochen.design${thumbnail}`}/>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}/>
+    <meta name="twitter:description" content={description}/>
+    <meta name="twitter:image" content={`https://www.guochen.design${thumbnail}`} />
 </head>
