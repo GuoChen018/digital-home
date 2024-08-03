@@ -2,11 +2,8 @@
 const {title, description, thumbnail} = Astro.props;
 const { frontmatter } = Astro.props;
 
-import { join } from "node:path";
-import { AstroFont } from "astro-font";
-
-const makeFontPath = (path: string) => join(process.cwd(), 'public', 'fonts', path)
 ---
+
 
 <head>
     <meta charset="utf-8" />
@@ -17,58 +14,17 @@ const makeFontPath = (path: string) => join(process.cwd(), 'public', 'fonts', pa
       type="text/css"
       href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Regular.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Medium.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-Bold.ttf" type="font/ttf" crossorigin>
+    <link rel="preload" as="font" href="/fonts/PlusJakartaSans-SemiBold.ttf" type="font/ttf" crossorigin>
+
     <link
       rel="stylesheet"
       type="text/css"
       href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
-    <AstroFont
-      config={[
-        {
-          name: "PlusJakartaSans",
-          src: [
-            {
-              style: 'normal',
-              weight: '400',
-              path: makeFontPath('PlusJakartaSans-Regular.ttf')
-            },
-            {
-              style: 'normal',
-              weight: '500',
-              path: makeFontPath('PlusJakartaSans-Medium.ttf')
-            },
-            {
-              style: 'normal',
-              weight: '700',
-              path: makeFontPath('PlusJakartaSans-Bold.ttf')
-            },
-            {
-              style: 'normal',
-              weight: '600',
-              path: makeFontPath('PlusJakartaSans-SemiBold.ttf')
-            },
-          ],
-          preload: true,
-          display: "swap",
-          fallback: "sans-serif",
-          cssVariable: "font-sans",
-        },
-        {
-          name: "CommitMono",
-          src: [
-            {
-              style: 'normal',
-              weight: '400',
-              path: makeFontPath('CommitMono-400-Regular.otf')
-            },
-          ],
-          preload: false,
-          display: "swap",
-          fallback: "sans-serif",
-          cssVariable: "font-commit",
-        },
-      ]}
-    />
+    
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <title>{title}</title>
