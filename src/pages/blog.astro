@@ -6,19 +6,57 @@ const allPosts = await Astro.glob('../pages/blog/*.md');
 
 ---
 
-<MainLayout title="Blog" description='My Blog' thumbnail="/images/og-img.jpg">
-  <main class="blog">
+<MainLayout title="Writing" description='My Writing' thumbnail="/images/og-img.jpg">
+  <main id="main" class="blog">
 
-    <h1>Blog</h1>
+    <h1>Writing</h1>
     <ul class="blog-list">
-      {allPosts.reverse().map((post) => 
+      {allPosts.reverse().map((post, index) => 
         <li class="blog-row">
-          <a href={post.url}>{post.frontmatter.title}</a>
+          <a href={post.url} id={index === 0 ? 'first-post' : undefined} class="blog-row-link">{post.frontmatter.title}</a>
           <p>{post.frontmatter.date}</p>
         </li>)
       }
     </ul>
       
   </main>
+  
+  <script>
+    // When skip link is used, focus the first post instead of main
+    document.addEventListener('DOMContentLoaded', () => {
+      const skipLink = document.querySelector('.skip');
+      const firstPost = document.getElementById('first-post');
+      
+      if (skipLink && firstPost) {
+        const focusFirstPost = (e) => {
+          e.preventDefault();
+          firstPost.focus();
+          firstPost.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        };
+        
+        skipLink.addEventListener('click', focusFirstPost);
+        skipLink.addEventListener('keydown', (e: KeyboardEvent) => {
+          if (e.key === 'Enter') {
+            focusFirstPost(e);
+          }
+        });
+      }
+
+      // Make entire row clickable
+      const blogRows = document.querySelectorAll('.blog-row');
+      blogRows.forEach((row) => {
+        const link = row.querySelector('a');
+        if (link) {
+          row.addEventListener('click', (e) => {
+            // Don't navigate if clicking directly on the link (let default behavior handle it)
+            if (e.target !== link && !link.contains(e.target as Node)) {
+              e.preventDefault();
+              link.click();
+            }
+          });
+        }
+      });
+    });
+  </script>
 </MainLayout>
 

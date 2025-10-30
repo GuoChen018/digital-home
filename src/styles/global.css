@@ -312,20 +312,31 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.blog:focus {
+    outline: none;
+}
+
+.blog:focus-within {
+    outline: none;
+}
+
 .blog {
     height: calc(100vh - 200px);
 }
 
 pre {
     margin-top: 1rem;
-    
-	padding: 0 1.5rem;
-	border-radius: 0.5rem;
+    margin-bottom: 1rem;
+	padding: 1.5rem;
+	border-radius: var(--border-radius-medium);
     font-family: 'CommitMono', sans-serif;
     font-weight: var(--font-weight-reg);
     font-size: var(--font-size-small);
     line-height: var(--lh-medium);
+    background-color: #fff;
     border: 1px solid var(--color-border-light);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
 }
 
 pre > code {
@@ -438,36 +449,45 @@ pre > code .line {
     align-items: center;
     justify-content: space-between;
     border-radius: var(--border-radius-medium);
+    padding: 0.45rem 1rem 0.125rem 1rem;
+    margin-left: -1rem;
+    transition: background-color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
 }
 
 .blog-row > * {
     flex: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .blog-row > p {
     text-align: right;
+    pointer-events: none;
 }
 
 .blog-row > a {
     line-height: var(--lh-medium);
     text-decoration: none;
+    color: var(--color-text-primary);
 }
 
-.blog-row a[href]::after {
+.blog-row > a:hover {
+    color: var(--color-text-primary);
+}
+
+.blog-row-link::after {
     content: "";
-    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    transition: all 0.3s ease;
+    z-index: 0;
 }
 
-
 .blog-row:hover {
-    /* text-decoration: underline; */
-    /* background-color: var(--color-background-secondary); */
+    background-color: var(--color-background-secondary);
 }
 
 #project-list .project-list-item {

@@ -7,12 +7,12 @@ export default defineConfig({
       shikiConfig: {
         // Choose from Shiki's built-in themes (or add your own)
         // https://shiki.style/themes
-        theme: 'catppuccin-mocha',
+        theme: 'github-light',
         // Alternatively, provide multiple themes
         // https://shiki.style/guide/dual-themes
         themes: {
-          light: 'catppuccin-mocha',
-          dark: 'catppuccin-mocha',
+          light: 'github-light',
+          dark: 'github-light',
         },
         // Add custom languages
         // Note: Shiki has countless langs built-in, including .astro!
